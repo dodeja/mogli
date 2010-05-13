@@ -3,7 +3,7 @@ module Mogli
   class User < Profile
     
     define_properties :first_name, :last_name, :link, :about, :birthday, 
-          :email, :website, :timezone, :updated_time, :verified
+          :email, :website, :timezone, :updated_time, :verified, :gender
     
     def self.recognize?(hash)
       !hash.has_key?("category")
